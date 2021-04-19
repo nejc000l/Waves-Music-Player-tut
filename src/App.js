@@ -6,6 +6,7 @@ import data from './data';
 import Library from './components/Library'
 
 
+
 function App() {
   //ref 
   const audioRef = useRef(null)
@@ -36,9 +37,17 @@ const timeUpdateHandler =(e)=>{
         currentSong ={currentSong}
         
       />
-      <Library songs={songs} setCurrentSong={setCurrentSong}/>
+      <Library 
+      audioRef={audioRef}
+      songs={songs} 
+      setCurrentSong={setCurrentSong}
+      isPlaying={isPlaying}
+      setSongs={setSongs}
+      />
+
       <audio 
       onTimeUpdate={timeUpdateHandler} 
+      onLoadedMetadata ={timeUpdateHandler}
       ref={audioRef} 
       src={currentSong.audio}></audio>
 

@@ -17,7 +17,6 @@
     align-items:center;
     padding: 1rem 2rem 1rem 2rem;
     cursor:pointer;
-
     img{
         width:30%;
     }
@@ -58,4 +57,9 @@
     border-radius:20px;
     border:transperent
 
+}
+
+.selected{
+    background-color: rgba(148, 148, 211, 0.274);
+    
 }
