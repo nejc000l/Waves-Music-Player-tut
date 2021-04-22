@@ -39,6 +39,8 @@ return (
             currentSong={currentSong}
             setIsPlaying={setIsPlaying}
             isPlaying ={isPlaying}
+            songs={songs}
+            setCurrentSong={setCurrentSong}
             
         
         />
