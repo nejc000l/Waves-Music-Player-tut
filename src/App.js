@@ -30,7 +30,7 @@ const duration = e.target.duration
 const roundedCurrent = Math.round(current);
 const roundedDuration = Math.round(duration);
 const animation = Math.round((roundedCurrent/roundedDuration)*100);
-console.log(animation);
+
 
 
 setSongInfo({...songInfo, currentTime:current, duration:duration, animationPercentage:animation})   
